@@ -1,4 +1,10 @@
-My own Vim configurations and plugins which I used. 
+## Notetice
+This is a fork repo form : [eddie-vim](https://github.com/kaochenlong/eddie-vim.git)
+
+Remove all default hotkey setting and redefind at jyyan-vimrc.
+
+--
+My own Vim configurations and plugins which I used.
 
 Primary Vim relative settings are in `plugin/settings/Vimrc.vim` file, and isolate other plugins' settings in `plugin/settings` directory.
 
@@ -18,16 +24,16 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
 
 3. copy files to your home directory:
 
-        git clone git://github.com/kaochenlong/eddie-vim.git
+        git clone git://github.com/jyyan/jyyan-vim.git
 
 4. cd to `eddie-vim` directory and execute the `update.sh` to get latest version modules:
 
-        cd eddie-vim
+        cd jyyan-vim
         ./update.sh
 
 5. make a symbolic link `.vim` to `eddie-vim` that you just cloned, or just rename it to `.vim` also be fine:
 
-        ln -s eddie-vim .vim
+        ln -s jyyan-vim .vim
 
 6. link the vimrc to
 
@@ -55,7 +61,7 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
 
 2. Toggle between working mode and presentation mode by `<leader>z`, but only work in GUI version Vim. You can check [here](http://blog.eddie.com.tw/2012/03/14/switch-to-presentation-mode/) to see how it looks like. (stole from [Mike Skalnik](https://github.com/skalnik))
 
-3. some usually used key mappings in normal mode:
+3. some usually used key mappings in normal mode at <b>jyyan-vimrc</b>:
 
     a. hit `<ctrl>w p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. and `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
 
@@ -63,19 +69,39 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
 
     c. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
 
-    d. `<F5>` to run Ruby and Python scripts, and compile CoffeeScript to Javascript(You have to install CoffeeScript first, of course).
+    d. `<F2>` to save this document and run checksyntax_vim automatically
 
-    e. `<F7>` to switch to previous tab, and `<F8>` to the next tab.
+    e. `<F4>` to close this <b>tabpage</b> or close this document use `:q`
 
-    f. `<leader>v` to open `.vimrc` in a new tab.
+    f. `<F5>` to run Ruby and Python scripts, and compile CoffeeScript to Javascript(You have to install CoffeeScript first, of course).
 
-    g. `<leader>0` to edit or create `README.md` in current working directory.
+    g. `<F6>` to switch to previous tab, and `<F8>` to the next tab.
+
+    h. `<F7>` to open a empty tabpage
+
+    i. `<F9>  to open NERTree lint at left site
+
+    j. `<F12>` to open ctag list at right site
+
+    k. `<CTRL>+<F12>` to call ctag command use `:!ctags ...`
+
+    l. `<leader>v` to open `.vimrc` in a new tab.
+
+    m. `<leader>0` to edit or create `README.md` in current working directory.
 
 ## FAQ
 
 if you can not found `ctags` command, just find your ctags path and replace my settings in `plugin/settings/Ctags.vim` file:
 
     let Tlist_Ctags_Cmd = '/your/path/to/ctags'
+
+if you use ubuntu. you can install ctags and vim use:
+
+    sudo apt-get install vim-gnome vim exuberant-ctags cscope
+
+and then the ctags bin locate path will be like
+
+    let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 
 and [Exuberant Ctags](http://ctags.sourceforge.net/) is recommended.
 
