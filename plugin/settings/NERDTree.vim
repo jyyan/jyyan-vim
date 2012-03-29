@@ -1,4 +1,3 @@
-nnoremap <silent> <F2> :NERDTreeMirrorToggle<CR>
 let NERDTreeShowBookmarks=0
 let NERDTreeChDirMode=2
 let NERDTreeMouseMode=2
