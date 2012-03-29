@@ -31,7 +31,7 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
         cd jyyan-vim
         ./update.sh
 
-5. make a symbolic link `.vim` to `eddie-vim` that you just cloned, or just rename it to `.vim` also be fine:
+5. make a symbolic link `.vim` to `jyyan-vim` that you just cloned, or just rename it to `.vim` also be fine:
 
         ln -s jyyan-vim .vim
 
@@ -45,11 +45,15 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
 
 8. if you use GUI version VIM, such as MacVim or GVim, you can also link to `.gvimrc`:
 
-        ln -s eddie-vim/gvimrc .gvimrc
+        ln -s .vim/gvimrc .gvimrc
 
-9. if you use Powerline under Ubuntu or something which can not show the correct icons/fonts on the bottom, you can check [this link](https://github.com/scotu/ubuntu-mono-powerline), it looks pretty nice.
+9. if you want to use same satting like me , you can also link `jyyan-vimrc` :
 
-10. you may need to install `ack` first if you use `ack.vim`.
+        ln -s .vim/jyyan-vimrc .vimrc
+
+10. if you use Powerline under Ubuntu or something which can not show the correct icons/fonts on the bottom, you can check [this link](https://github.com/scotu/ubuntu-mono-powerline), it looks pretty nice.
+
+11. you may need to install `ack` first if you use `ack.vim`.
 
 ### Update:
 
@@ -79,7 +83,7 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
 
     h. `<F7>` to open a empty <b>Tabpage</b>
 
-    i. `<F9>` to open NERTree lint at left site
+    i. `<F9>` to open NERTree list at left site
 
     j. `<F12>` to open ctag list at right site
 
