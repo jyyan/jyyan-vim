@@ -1,7 +1,7 @@
 ## Notetice
-This is a fork repo form : [eddie-vim](https://github.com/kaochenlong/eddie-vim.git)
+This is a fork repo form Eddie Kao (eddie@digik.com.tw)/[eddie-vim](https://github.com/kaochenlong/eddie-vim.git) thanks for all.
 
-Remove all default hotkey setting and redefind at jyyan-vimrc.
+With the original repo [eddie-vim](https://github.com/kaochenlong/eddie-vim.git). I remove all default hotkey setting and redefind at jyyan-vimrc.
 
 --
 My own Vim configurations and plugins which I used.
@@ -71,15 +71,15 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
 
     d. `<F2>` to save this document and run checksyntax_vim automatically
 
-    e. `<F4>` to close this <b>tabpage</b> or close this document use `:q`
+    e. `<F4>` to close this <b>Tabpage</b> or close this document use `:q`
 
     f. `<F5>` to run Ruby and Python scripts, and compile CoffeeScript to Javascript(You have to install CoffeeScript first, of course).
 
     g. `<F6>` to switch to previous tab, and `<F8>` to the next tab.
 
-    h. `<F7>` to open a empty tabpage
+    h. `<F7>` to open a empty <b>Tabpage</b>
 
-    i. `<F9>  to open NERTree lint at left site
+    i. `<F9>` to open NERTree lint at left site
 
     j. `<F12>` to open ctag list at right site
 
@@ -88,6 +88,8 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
     l. `<leader>v` to open `.vimrc` in a new tab.
 
     m. `<leader>0` to edit or create `README.md` in current working directory.
+
+4. You can make one copy of jyyan-vimrc & ref: vimrc / pro-vimrc / easy-vimrc to redefine what you like for .
 
 ## FAQ
 
@@ -109,4 +111,4 @@ and [Exuberant Ctags](http://ctags.sourceforge.net/) is recommended.
 
 Enjoy it, and if there's any question or comment, feel free to let me know :)
 
-Eddie Kao (eddie@digik.com.tw)
+Jun-Yuan Yan (jyyan@jyyan.info)
