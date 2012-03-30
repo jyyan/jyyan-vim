@@ -61,23 +61,23 @@ just change directory to `~/.vim` and execute `./update.sh` script, it should do
 
 ### Features:
 
-*   Resize splited windows automatically, so that you  get a bigger editing room if you're working with a smaller screen. (stole from [Gary Bernhardt](https://github.com/garybernhardt))
-*   Toggle between working mode and presentation mode by `<leader>z`, but only work in GUI version Vim. You can check [here](http://blog.eddie.com.tw/2012/03/14/switch-to-presentation-mode/) to see how it looks like. (stole from [Mike Skalnik](https://github.com/skalnik))
-* some usually used key mappings in normal mode at <b>jyyan-vimrc</b>:
-**   hit `<ctrl>w p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. and `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
-**   hit `<leader>` twice to toggle comment on and off.
-**   `<F1>` to launch a Calendar window.
-**   `<F2>` to save this document and run checksyntax_vim automatically
-**   `<F4>` to close this <b>Tabpage</b> or close this document use `:q`
-**   `<F5>` to run Ruby and Python scripts, and compile CoffeeScript to Javascript(You have to install CoffeeScript first, of course).
-**   `<F6>` to switch to previous tab, and `<F8>` to the next tab.
-**   `<F7>` to open a empty <b>Tabpage</b>
-**   `<F9>` to open NERTree list at left site
-**   `<F12>` to open ctag list at right site
-**   `<CTRL>+<F12>` to call ctag command use `:!ctags ...`
-**   `<leader>v` to open `.vimrc` in a new tab.
-**   `<leader>0` to edit or create `README.md` in current working directory.
-*   You can make one copy of jyyan-vimrc & ref: vimrc / pro-vimrc / easy-vimrc to redefine what you like for .
+1.   Resize splited windows automatically, so that you  get a bigger editing room if you're working with a smaller screen. (stole from [Gary Bernhardt](https://github.com/garybernhardt))
+1.   Toggle between working mode and presentation mode by `<leader>z`, but only work in GUI version Vim. You can check [here](http://blog.eddie.com.tw/2012/03/14/switch-to-presentation-mode/) to see how it looks like. (stole from [Mike Skalnik](https://github.com/skalnik))
+1. some usually used key mappings in normal mode at <b>jyyan-vimrc</b>:
+ a.   hit `<ctrl>w p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. and `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
+ a.   hit `<leader>` twice to toggle comment on and off.
+ a.   `<F1>` to launch a Calendar window.
+ a.   `<F2>` to save this document and run checksyntax_vim automatically
+ a.   `<F4>` to close this <b>Tabpage</b> or close this document use `:q`
+ a.   `<F5>` to run Ruby and Python scripts, and compile CoffeeScript to Javascript(You have to install CoffeeScript first, of course).
+ a.   `<F6>` to switch to previous tab, and `<F8>` to the next tab.
+ a.   `<F7>` to open a empty <b>Tabpage</b>
+ a.   `<F9>` to open NERTree list at left site
+ a.   `<F12>` to open ctag list at right site
+ a.   `<CTRL>+<F12>` to call ctag command use `:!ctags ...`
+ a.   `<leader>v` to open `.vimrc` in a new tab.
+ a.   `<leader>0` to edit or create `README.md` in current working directory.
+1.   You can make one copy of jyyan-vimrc & ref: vimrc / pro-vimrc / easy-vimrc to redefine what you like for .
 
 ## FAQ
 
