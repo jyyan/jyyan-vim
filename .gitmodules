@@ -95,3 +95,9 @@
 [submodule "bundle/checksyntax_vim"]
 	path = bundle/checksyntax_vim
 	url = git://github.com/tomtom/checksyntax_vim.git
+[submodule "bundle/calendar.vim"]
+	path = bundle/calendar.vim
+	url = git://github.com/vim-scripts/calendar.vim--Matsumoto.git
+[submodule "bundle/align"]
+	path = bundle/align
+	url = git://github.com/vim-scripts/Align.git
