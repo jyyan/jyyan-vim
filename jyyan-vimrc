@@ -4,13 +4,16 @@
 " Eddie Kao
 " http://blog.eddie.com.tw
 " eddie@digik.com.tw
-
+"
+" Modified by Jun-Yuan Yan - sss2500
+" jyyan@jyyan.info
+"
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 call pathogen#infect()
 call pathogen#helptags()
-
 " =============
 "  custom key
 " =============
@@ -29,14 +32,6 @@ noremap ; :nohlsearch<CR>
 
 " Have the mouse enabled all the time:
 set mouse=a
-
-" navigating for long lines
-map j gj
-map k gk
-map <UP> gk
-map <DOWN> gj
-imap <UP> <ESC>gk<RIGHT>i
-imap <DOWN> <ESC>gj<RIGHT>i
 
 " Top navigation Setting
 " quick save this doc

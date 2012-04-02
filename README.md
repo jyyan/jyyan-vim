@@ -6,7 +6,7 @@ With the original repo [eddie-vim](https://github.com/kaochenlong/eddie-vim.git)
 --
 My own Vim configurations and plugins which I used.
 
-Primary Vim relative settings are in `plugin/settings/Vimrc.vim` file, and isolate other plugins' settings in `plugin/settings` directory.
+Primary Vim relative settings are in `plugin/settings/Settings.vim` file, and isolate other plugins' settings in `plugin/settings` directory.
 
 It's how my Vim looks now:
 
@@ -16,7 +16,7 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
 
 ## Usage
 
-### Install:
+### Installation and Requisites:
 
 1. BACKUP your `.vim` directory and `.vimrc` first.(IMPORTANT!)
 
@@ -57,43 +57,32 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
 
 ### Update:
 
-just change directory to `~/.vim` and execute `./update.sh` script, it should do all the updates automatically.
+change directory to `~/.vim` and execute `./update.sh` script, it should do all the updates automatically.
 
-### Features:
+### Features and Key Mappings:
 
 1. Resize splited windows automatically, so that you  get a bigger editing room if you're working with a smaller screen. (stole from [Gary Bernhardt](https://github.com/garybernhardt))
-
-2. Toggle between working mode and presentation mode by `<leader>z`, but only work in GUI version Vim. You can check [here](http://blog.eddie.com.tw/2012/03/14/switch-to-presentation-mode/) to see how it looks like. (stole from [Mike Skalnik](https://github.com/skalnik))
-
-3. some usually used key mappings in normal mode at <b>jyyan-vimrc</b>:
-
-    a. hit `<ctrl>w p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. and `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
-
-    b. hit `<leader>` twice to toggle comment on and off.
-
-    c. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
-
-    d. `<F2>` to save this document and run checksyntax_vim automatically
-
-    e. `<F4>` to close this <b>Tabpage</b> or close this document use `:q`
-
-    f. `<F5>` to run Ruby and Python scripts, and compile CoffeeScript to Javascript(You have to install CoffeeScript first, of course).
-
-    g. `<F6>` to switch to previous tab, and `<F8>` to the next tab.
-
-    h. `<F7>` to open a empty <b>Tabpage</b>
-
-    i. `<F9>` to open NERTree list at left site
-
-    j. `<F12>` to open ctag list at right site
-
-    k. `<CTRL>+<F12>` to call ctag command use `:!ctags ...`
-
-    l. `<leader>v` to open `.vimrc` in a new tab.
-
-    m. `<leader>0` to edit or create `README.md` in current working directory.
-
-4. You can make one copy of jyyan-vimrc & ref: vimrc / pro-vimrc / easy-vimrc to redefine what you like for .
+1. Toggle between working mode and presentation mode by `<leader>z`, but only work in GUI version Vim. You can check [here](http://blog.eddie.com.tw/2012/03/14/switch-to-presentation-mode/) to see how it looks like. (stole from [Mike Skalnik](https://github.com/skalnik))
+1. some usually used key mappings in normal mode at <b>jyyan-vimrc</b>:
+ 1. `<F1>` to launch a Calendar window.
+ 1. `<F2>` to save this document and run checksyntax_vim automatically
+ 1. `<F4>` to close this <b>Tabpage</b> or close this document use `:q`
+ 1. `<F5>` is script runner, according to the filetype, it will run Ruby or Python script, or even CoffeeScript(You have to install CoffeeScript first, of course). if the filetype is VimScript, `<F5>` will run `:source %` for you.
+ 1. `<F6>` to switch to previous tab, and `<F8>` to the next tab.
+ 1. `<F7>` to open a empty <b>Tabpage</b>
+ 1. `<F9>` to toggle NERTree list at left site
+ 1. `<F11>` to toggle yanking list
+ 1. `<F12>` to toggle ctag list at right site
+ 1. `<CTRL>+<F12>` to call ctag command use `:!ctags ...`
+ 1. `<leader>v` to open `.vimrc` in a new tab.
+ 1. `<leader>0` to edit or create `README.md` in current working directory.
+ 1. `<ctrl>w p` will launch a quick window to match keywords from your current working directory, not only file name, but also path name. and `<ctrl>w u` will match from your MRU(Mostly Recent Used) files, which is also frequently used.
+ 1. hit `<leader>` twice to toggle comment on and off.
+ 1. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
+ 1. `<leader>v` to open `.vimrc` in a new tab.
+ 1. `<leader>0` to edit or create `README.md` in current working directory.
+1. Remove tailing whitespace automatically while saving.
+1. You can make one copy of jyyan-vimrc & ref: vimrc / pro-vimrc / easy-vimrc to redefine what you like for .
 
 ## FAQ
 
