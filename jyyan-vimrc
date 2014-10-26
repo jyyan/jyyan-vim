@@ -8,12 +8,18 @@
 " Modified by Jun-Yuan Yan - sss2500
 " jyyan@jyyan.info
 "
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-filetype off
-call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
-call pathogen#infect()
-call pathogen#helptags()
+if has('win32') || has('win64')
+	"set runtimepath=$VIM/.vim
+endif
+
+"runtime bundle/vim-pathogen/autoload/pathogen.vim
+"filetype off
+"call pathogen#runtime_append_all_bundles()
+"filetype plugin indent on
+"call pathogen#infect()
+"call pathogen#helptags()
+
+
 " =============
 "  custom key
 " =============
