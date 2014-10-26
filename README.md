@@ -96,11 +96,11 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
 
  if you use ubuntu. you can install ctags and vim use:
 
-	sudo apt-get install vim-gnome vim exuberant-ctags cscope
+        sudo apt-get install vim-gnome vim exuberant-ctags cscope
 
  and then the ctags bin locate path will be like
 
-	let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+        let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 
  and [Exuberant Ctags](http://ctags.sourceforge.net/) is recommended.
  at last , if you are use windows. you can download ctags from  [Ctags download](http://ctags.sourceforge.net/) and unzip it. copy the ctags.exe to your WINDOWS\SYSTEM32 folder , then you can use ctags command in cmd.exe .
@@ -112,8 +112,8 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
  1. clone this git repo over there
  1. and then make .vim / .vimrc link , use below command:
 
-	mklink ".vim" "jyyan-vim" /d
-	mklink ".vimrc" "jyyan-vim/jyyan-vimrc" /h
+        mklink ".vim" "jyyan-vim" /d
+        mklink ".vimrc" "jyyan-vim/jyyan-vimrc" /h
 
  1. update jyyan-vim , use ./update.sh or `git submodule foreach --recursive git pull origin master` command
  1. finished
