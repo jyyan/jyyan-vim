@@ -21,16 +21,15 @@ if has('win32') || has('win64')
 	"reload menu with UTF-8 encoding
 	source $VIMRUNTIME/delmenu.vim
 	source $VIMRUNTIME/menu.vim
-	
 	set runtimepath=$VIM/.vim
 endif
 
-"runtime bundle/vim-pathogen/autoload/pathogen.vim
-"filetype off
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+filetype on
 "call pathogen#runtime_append_all_bundles()
-"filetype plugin indent on
-"call pathogen#infect()
-"call pathogen#helptags()
+filetype plugin indent on
+call pathogen#infect()
+call pathogen#helptags()
 
 
 " =============
