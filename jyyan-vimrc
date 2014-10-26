@@ -9,7 +9,20 @@
 " jyyan@jyyan.info
 "
 if has('win32') || has('win64')
-	"set runtimepath=$VIM/.vim
+	let $LANG="zh_TW.UTF-8"
+	set langmenu=zh_tw.utf-8
+	set encoding=utf-8
+	set termencoding=utf-8
+	set fileencoding=utf-8
+	set fileencodings=ucs-bom,utf-8,chinese,cp950,cp936
+
+	language messages zh_tw.utf-8
+
+	"reload menu with UTF-8 encoding
+	source $VIMRUNTIME/delmenu.vim
+	source $VIMRUNTIME/menu.vim
+	
+	set runtimepath=$VIM/.vim
 endif
 
 "runtime bundle/vim-pathogen/autoload/pathogen.vim
