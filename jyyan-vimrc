@@ -52,6 +52,7 @@ set mouse=a
 " Top navigation Setting
 " quick save this doc
 map <F2> :w<CR>
+map <C-s> :w<CR>
 "nmap <F4> <ESC>:call CloseTab()<CR>
 nmap <F4> <ESC>:q<CR>
 " next and prev tb

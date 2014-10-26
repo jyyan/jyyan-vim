@@ -66,6 +66,7 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
 1. some usually used key mappings in normal mode at <b>jyyan-vimrc</b>:
  1. `<F1>` to launch a Calendar window.
  1. `<F2>` to save this document and run checksyntax_vim automatically
+ 1. `<ctrl>+s` to save file too
  1. `<F4>` to close this <b>Tabpage</b> or close this document use `:q`
  1. `<F5>` is script runner, according to the filetype, it will run Ruby or Python script, or even CoffeeScript(You have to install CoffeeScript first, of course). if the filetype is VimScript, `<F5>` will run `:source %` for you.
  1. `<F6>` to switch to previous tab, and `<F8>` to the next tab.
@@ -81,10 +82,11 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
  1. `<tab>` and `<shift><tab>` to increase and decrease the syntax identation.
  1. `<leader>v` to open `.vimrc` in a new tab.
  1. `<leader>0` to edit or create `README.md` in current working directory.
+ 1. by the way , the <leader> key always mapped with <\> key by default
 1. Remove tailing whitespace automatically while saving.
 1. You can make one copy of jyyan-vimrc & ref: vimrc / pro-vimrc / easy-vimrc to redefine what you like for .
 
-## FAQ
+## FAQ of cTags
 
 if you can not found `ctags` command, just find your ctags path and replace my settings in `plugin/settings/Ctags.vim` file:
 
@@ -99,6 +101,8 @@ and then the ctags bin locate path will be like
     let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 
 and [Exuberant Ctags](http://ctags.sourceforge.net/) is recommended.
+
+at last , if you are use windows. you can download ctags from  [Ctags download](http://ctags.sourceforge.net/) and unzip it. copy the ctags.exe to your WINDOWS\SYSTEM32 folder , then you can use ctags command in cmd.exe .
 
 ## Contact
 
