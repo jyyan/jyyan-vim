@@ -89,22 +89,32 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
 ## FAQ
 
 1. cTags
+
  if you can not found `ctags` command, just find your ctags path and replace my settings in `plugin/settings/Ctags.vim` file:
+
     let Tlist_Ctags_Cmd = '/your/path/to/ctags'
+
 if you use ubuntu. you can install ctags and vim use:
+
     sudo apt-get install vim-gnome vim exuberant-ctags cscope
+
 and then the ctags bin locate path will be like
+
     let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+
 and [Exuberant Ctags](http://ctags.sourceforge.net/) is recommended.
 at last , if you are use windows. you can download ctags from  [Ctags download](http://ctags.sourceforge.net/) and unzip it. copy the ctags.exe to your WINDOWS\SYSTEM32 folder , then you can use ctags command in cmd.exe .
+
 1. Windows install gvim guide:
  1. download vimruntime & Gvim from : [Vim release page](http://www.vim.org/download.php#pc)
  1. un package those 2 zip file into SAME folder. such like "program files\vim\vimruntime"
  1. and open CMD interface in "program files\vim" folder
  1. clone this git repo over there
  1. and then make .vim / .vimrc link , use below command:
+
     mklink ".vim" "jyyan-vim" /d
     mklink ".vimrc" "jyyan-vim/jyyan-vimrc" /h
+
  1. update jyyan-vim , use ./update.sh or `git submodule foreach --recursive git pull origin master` command
  1. finished
 
