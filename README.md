@@ -24,32 +24,32 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
 
 3. copy files to your home directory:
 
-      # git clone git://github.com/jyyan/jyyan-vim.git
+      > # git clone git://github.com/jyyan/jyyan-vim.git
 
 4. cd to `eddie-vim` directory and execute the `update.sh` to get latest version modules:
 
-      # cd jyyan-vim
-      # ./update.sh
+      > # cd jyyan-vim
+      > # ./update.sh
 
 5. make a symbolic link `.vim` to `jyyan-vim` that you just cloned, or just rename it to `.vim` also be fine:
 
-      # ln -s jyyan-vim .vim
+      > # ln -s jyyan-vim .vim
 
 6. link the vimrc to
 
-      #  ln -s .vim/vimrc .vimrc
+      > #  ln -s .vim/vimrc .vimrc
 
 7. if you're still not familiar with the movement in vim by HJKL or yanking and pasting text, I've made a easier version:
 
-      #  ln -s .vim/easy-vimrc .vimrc
+      > #  ln -s .vim/easy-vimrc .vimrc
 
 8. if you use GUI version VIM, such as MacVim or GVim, you can also link to `.gvimrc`:
 
-      # ln -s .vim/gvimrc .gvimrc
+      > # ln -s .vim/gvimrc .gvimrc
 
 9. if you want to use same satting like me , you can also link `jyyan-vimrc` :
 
-      # ln -s .vim/jyyan-vimrc .vimrc
+      > # ln -s .vim/jyyan-vimrc .vimrc
 
 10. if you use Powerline under Ubuntu or something which can not show the correct icons/fonts on the bottom, you can check [this link](https://github.com/scotu/ubuntu-mono-powerline), it looks pretty nice.
 
@@ -93,31 +93,32 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
 
     <b>Ubuntu</b>
 
-        sudo apt-get install vim-gnome vim exuberant-ctags cscope
+      > #sudo apt-get install vim-gnome vim exuberant-ctags cscope
 
     <b>OpenSUSE</b>
 
-	sudo zypper install vim ctags
+      > #sudo zypper install vim ctags
+
  Its that the default ctags plugin setting is for **ubuntu** environment. When you use <F12> to open the ctags list , got the message show you vim could not found the ctags command. just try to check your ctags path and replace my settings in `plugin/settings/Ctags.vim` file:
 
         let Tlist_Ctags_Cmd = '/your/path/to/ctags'
 
  and then check the ctags bin locate path using `whereis` :
 
-	 #  whereis ctagsctags
-	 > <b>/usr/bin/ctags</b> /usr/share/man/man1/ctags.1.gz /usr/share/man/man1p/ctags.1p.gz
+      > #  whereis ctagsctags
+      > <b>/usr/bin/ctags</b> /usr/share/man/man1/ctags.1.gz /usr/share/man/man1p/ctags.1p.gz
 
-      and change the setting from
+ and change the setting from
 
         let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'   # ubuntu ctags location
 
-      to
+ to
 
         let Tlist_Ctags_Cmd = '/usr/bin/ctags'         # openSUSE ctags location
 
-      or just link the ctags bin to new locations
+ or just link the ctags bin to new locations
 
-	# sudo ln -s /usr/bin/ctags /usr/local/bin/ctags
+      > # sudo ln -s /usr/bin/ctags /usr/local/bin/ctags
 
  and [Exuberant Ctags](http://ctags.sourceforge.net/) is recommended.
  at last , if you are use windows. you can download ctags from  [Ctags download](http://ctags.sourceforge.net/) and unzip it. copy the ctags.exe to your WINDOWS\SYSTEM32 folder , then you can use ctags command in cmd.exe .
@@ -129,14 +130,13 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
  1. clone this git repo over there
  1. and then make .vim / .vimrc link , use below command:
 
-        mklink ".vim" "jyyan-vim" /d
-
-        mklink ".vimrc" "jyyan-vim/jyyan-vimrc" /h
+      > mklink ".vim" "jyyan-vim" /d
+      > mklink ".vimrc" "jyyan-vim/jyyan-vimrc" /h
 
  1. update jyyan-vim , use ./update.sh or `git submodule foreach --recursive git pull origin master` command
  1. finished
 
-3. Maybe you would got the warning message such like missing `vim --servername` option , on the time you use vim to open some files at linux environment. you can open `~/.bashrc` and addition the followinig line :
+3. Maybe you would got the warning message such like this <b>`CheckSyntax: Run vim with the --servername NAME command line option to enable use of AsyncCommand`</b> , on the time you use vim to open some files at linux environment. you can open `~/.bashrc` and addition the followinig line :
 
     alias vim='vim --servername <whatever>'
 
