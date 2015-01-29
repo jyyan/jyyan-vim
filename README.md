@@ -107,7 +107,7 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
 
       # whereis ctagsctags
 
-      > <b>/usr/bin/ctags</b> /usr/share/man/man1/ctags.1.gz /usr/share/man/man1p/ctags.1p.gz
+      <b>/usr/bin/ctags</b> /usr/share/man/man1/ctags.1.gz /usr/share/man/man1p/ctags.1p.gz
 
  and change the setting from
 
@@ -132,6 +132,7 @@ change directory to `~/.vim` and execute `./update.sh` script, it should do all 
  1. and then make .vim / .vimrc link , use below command:
 
       mklink ".vim" "jyyan-vim" /d
+
       mklink ".vimrc" "jyyan-vim/jyyan-vimrc" /h
 
  1. update jyyan-vim , use ./update.sh or `git submodule foreach --recursive git pull origin master` command
