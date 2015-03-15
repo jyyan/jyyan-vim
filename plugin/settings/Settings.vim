@@ -50,7 +50,8 @@ set smarttab                          " insert tabs on the start of a line accor
 set expandtab                         " replace <TAB> with spaces
 set softtabstop=2
 set shiftwidth=2
-set noexpandtab
+set expandtab                         " enable expan tab , would not replace every 8 space char into '\t' char,
+set tabstop=4
 set shortmess=I                       " remove splash wording
 
 " disable sound on errors
