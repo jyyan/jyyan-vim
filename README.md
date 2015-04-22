@@ -27,7 +27,7 @@ and <a href="http://blog.eddie.com.tw/2012/03/06/my-vimrc/" target="_blank">Here
 
       # git clone git://github.com/jyyan/jyyan-vim.git
 
-4. cd to `eddie-vim` directory and execute the `update.sh` to get latest version modules:
+4. cd to `jyyan-vim` directory and execute the `update.sh` to get latest version modules:
 
       # cd jyyan-vim
       # ./update.sh
