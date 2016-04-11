@@ -116,6 +116,3 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less
-[submodule "bundle/vim-volt-syntax"]
-	path = bundle/vim-volt-syntax
-	url = https://github.com/etaoins/vim-volt-syntax
