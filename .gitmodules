@@ -119,3 +119,6 @@
 [submodule "bundle/vim-volt-syntax"]
 	path = bundle/vim-volt-syntax
 	url = https://github.com/jyyan/vim-volt-syntax
+[submodule "bundle/salt-vim"]
+	path = bundle/salt-vim
+	url = https://github.com/jyyan/salt-vim
