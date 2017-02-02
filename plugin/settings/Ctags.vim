@@ -1,4 +1,6 @@
-let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+if !exists("Tlist_Ctags_Cmd")
+  let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+endif
 let Tlist_WinWidth = 40
 set tags+=./tags;/
 set tags+=gems.tags

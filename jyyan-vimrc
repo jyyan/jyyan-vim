@@ -24,6 +24,8 @@ if has('win32') || has('win64')
 	set runtimepath=$VIM/.vim
 endif
 
+let Tlist_Ctags_Cmd = '/usr/bin/ctags'
+
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype on
 "call pathogen#runtime_append_all_bundles()
@@ -44,7 +46,7 @@ noremap <C-c> "+y
 noremap <C-v> "+P
 
 " cancel searched highlight
-noremap ; :nohlsearch<CR>
+"noremap ; :nohlsearch<CR>
 
 " Have the mouse enabled all the time:
 set mouse=a
